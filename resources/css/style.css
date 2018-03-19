@@ -33,6 +33,7 @@ body {
     visibility: hidden;
 }
 
+
 /* ----------------------------------------------- */
 
 /* REUSABLE COMPONENTS */
@@ -196,6 +197,15 @@ h2:after {
     margin-bottom: 10px;
 }
 
+.css-image {
+    font-size: 500%;
+    display: block;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
 /* ----- LINKS ----- */
 
 a:link,
@@ -241,28 +251,38 @@ header {
 }
 
 .logo {
-    height: 100px;
+    height: 50px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
+
 }
 
 
-/* Main navi */
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
 
-.main-nav {
+/* Main Nav Bar*/
+
+.navbar {
     float: right;
     list-style: none;
     margin-top: 50px;
 }
 
-.main-nav li {
+.navbar li {
     display: inline-block;
     margin-left: 50px;
+
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.navbar li a:link,
+.navbar li a:visited {
     padding: 10px 0;
     color: #fff;
     text-decoration: none;
@@ -273,9 +293,59 @@ header {
     transition: border-bottom 0.2s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
+.navbar li a:hover,
+.navbar li a:active {
     border-bottom: 2px solid #3498db;
+}
+
+/*MOBILE NAVI*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* Sticky Nav Bar*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 2px #efefef;
+
+}
+
+.navbar {
+    margin-top: 18px;
+}
+
+.sticky .navbar li a:link,
+.sticky .navbar li a:visited {
+    padding: 16px 0;
+    color: #030303;
+}
+
+.sticky .navbar {
+    margin-top: 15px;
+}
+
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
 }
 
 /* ----------------------------------------------- */
