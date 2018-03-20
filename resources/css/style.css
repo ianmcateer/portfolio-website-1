@@ -364,7 +364,7 @@ header {
 }
 
 .about-showcase li,
-projects-showcase li {
+.projects-showcase li {
     display: block;
     float: left;
     width: 25%;
