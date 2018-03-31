@@ -101,7 +101,7 @@
         float: left;
     }
     .main-nav li {
-        display: block;
+        /*        display: block;*/
     }
 
     .navbar {
